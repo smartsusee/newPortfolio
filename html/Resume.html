@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #071231;
+        display: flex;
+        border-radius: 10px;
+        height: 50px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+
+      .navbar a {
+        color: #ddd;
+        text-decoration: none;
+      }
+
+      /* WhatsApp Icon Styles */
+      .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .whatsapp-icon:hover {
+        transform: scale(1.1);
+      }
+
+      .whatsapp-icon img {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Resume Styles */
+      .resume {
+        border: 1px solid #ddd;
+        padding: 20px;
+        width: 600px;
+        margin: 40px auto;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: #385739;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 24px;
+        color: #333;
+      }
+
+      h3 {
+        font-size: 20px;
+        border-bottom: 2px solid #4caf50;
+        padding-bottom: 5px;
+      }
+
+      h4 {
+        color: #555;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #666;
+      }
+
+      ul {
+        padding-left: 20px;
+        list-style-type: none;
+        color: #555;
+      }
+
+      ul li {
+        padding: 5px 0;
+        position: relative;
+      }
+
+      ul li::before {
+        content: "✔";
+        color: #4caf50;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      /* Button Style */
+      button {
+        padding: 12px 30px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .resume {
+          width: 100%;
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        h2 {
+          font-size: 22px;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        ul li {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="/html/index.html">⬅ Back</a>
+      <button onclick="generatePDF()">Download PDF</button>
+    </div>
+
+    <div class="resume" id="resume">
+      <h1>Suseentheran</h1>
+      <h2>Web Developer</h2>
+      <p>
+        Email: <a href="mailto:susee37432@gmail.com">susee37432@gmail.com</a>
+      </p>
+      <p>Phone: 739-7277-786</p>
+
+      <h3 id="skills">Skills</h3>
+
+      <h4>Frontend</h4>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Git & GitHub</li>
+        <li>Bootstrap</li>
+      </ul>
+
+      <h4>Backend</h4>
+      <ul>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+      </ul>
+
+      <h4>Deploy</h4>
+      <ul>
+        <li>AWS</li>
+      </ul>
+
+      <h3 id="experience">Experience</h3>
+      <p>Sk Engineer Company, Jan 2022 - Present</p>
+      <ul>
+        <li>Developed web applications using React and Node.js.</li>
+        <li>Led a team of developers on various projects.</li>
+      </ul>
+
+      <h3>Education</h3>
+      <h4>Bachelor of Science in Computer Science</h4>
+      <p>
+        Karutha Rowther College of arts and science Bachelor of Science –
+        Information technology Passed out – 2022. <br />
+        SSLC/HSC: S.U.M higher secondary School
+      </p>
+    </div>
+
+    <!-- WhatsApp Icon -->
+    <a
+      href="https://wa.me/7397277786"
+      class="whatsapp-icon"
+      target="_blank"
+      title="Chat on WhatsApp"
+    >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <!-- Script for generating PDF -->
+    <script>
+      function generatePDF() {
+        const element = document.getElementById("resume");
+        const opt = {
+          margin: 0.5,
+          filename: "resume.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+        };
+        html2pdf().set(opt).from(element).save();
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  </body>
+</html>

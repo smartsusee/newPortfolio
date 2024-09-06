@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Suseentheran</title>
 
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="/img/img1.jpeg" type="image/svg+xml" />
 
     <!-- 
     - custom css link
@@ -70,19 +70,17 @@
               </li>
 
               <li>
-                <a href="#" class="header-top-social-link">
+                <a
+                  href="https://github.com/smartsusee"
+                  target="_blank"
+                  class="header-top-social-link"
+                >
                   <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="header-top-social-link">
-                  <ion-icon name="logo-pinterest"></ion-icon>
                 </a>
               </li>
             </ul>
 
-            <button class="header-top-btn">Add Listing</button>
+            <button class="header-top-btn">Trainee</button>
           </div>
         </div>
       </div>
@@ -113,7 +111,7 @@
             <div class="navbar-bottom">
               <ul class="navbar-list">
                 <li>
-                  <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                  <a href="#home" class="navbar-link" data-nav-link>intro</a>
                 </li>
 
                 <li>
@@ -133,12 +131,12 @@
                 </li>
 
                 <li>
-                  <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                </li>
-
-                <li>
-                  <a href="#contact" class="navbar-link" data-nav-link
-                    >Contact</a
+                  <a
+                    href="/html/Resume.html"
+                    target="_blank"
+                    class="navbar-link"
+                    data-nav-link
+                    >resume</a
                   >
                 </li>
               </ul>
@@ -146,22 +144,15 @@
           </nav>
 
           <div class="header-bottom-actions">
-            <button class="header-bottom-actions-btn" aria-label="Search">
-              <ion-icon name="search-outline"></ion-icon>
-
-              <span>Search</span>
-            </button>
-
-            <button class="header-bottom-actions-btn" aria-label="Profile">
-              <ion-icon name="person-outline"></ion-icon>
+            <button
+              id="resume"
+              class="header-bottom-actions-btn"
+              aria-label="Profile"
+              onclick="window.location.href=`./Resume.html`"
+            >
+              <ion-icon name="document-outline" id="animates"></ion-icon>
 
               <span>Profile</span>
-            </button>
-
-            <button class="header-bottom-actions-btn" aria-label="Cart">
-              <ion-icon name="cart-outline"></ion-icon>
-
-              <span>Cart</span>
             </button>
 
             <button
@@ -193,11 +184,12 @@
                 <span>Twitter</span>
               </p>
 
-              <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
+              <h4 class="h1 hero-title">MERN stack Developer</h4>
 
               <p class="hero-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore.
+                Skilled in Javascript and NodeJs. Passionate about creating
+                efficient and reliable applications. Strong problem solving and
+                teamwork abilities
               </p>
 
               <button class="btn">click</button>
@@ -221,67 +213,80 @@
           <div class="container">
             <figure class="about-banner">
               <img
-                src="./assets/images/about-banner-1.png"
+                src="/img/img3.png"
                 alt="House interior"
+                style="border-radius: 10px"
               />
 
-              <img
-                src="./assets/images/img1.jpeg"
+              <!-- <img
+                src="/img/img2.png"
                 alt="House interior"
                 class="abs-img"
-              />
+              /> -->
             </figure>
 
             <div class="about-content">
               <p class="section-subtitle">About Us</p>
 
-              <h2 class="h2 section-title">
-                The Leading Real Estate Rental Marketplace.
-              </h2>
+              <h2 class="h2 section-title">This is Admin panle</h2>
 
               <p class="about-text">
-                Over 39,000 people work for us in more than 70 countries all
-                over the This breadth of global coverage, combined with
-                specialist services
+                Hi, I'm Suseentheran, a passionate software developer with a
+                strong foundation in both frontend and backend technologies. I
+                specialize in creating dynamic and responsive web applications
+                using HTML, CSS, JavaScript, React.js, Node.js, and MongoDB. I’m
+                also experienced in deploying applications using AWS.
               </p>
 
               <ul class="about-list">
                 <li class="about-item">
                   <div class="about-item-icon">
-                    <ion-icon name="home-outline"></ion-icon>
+                    <!-- <ion-icon name="home-outline"></ion-icon> -->
+                    <ion-icon name="logo-github"></ion-icon>
                   </div>
 
-                  <p class="about-item-text">Smart Home Design</p>
+                  <p class="about-item-text">
+                    <a href="https://github.com/smartsusee">Github</a>
+                  </p>
                 </li>
 
                 <li class="about-item">
                   <div class="about-item-icon">
-                    <ion-icon name="leaf-outline"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
                   </div>
 
-                  <p class="about-item-text">Beautiful Scene Around</p>
+                  <p class="about-item-text">
+                    <a
+                      href="https://wa.me/7397277786"
+                      class="whatsapp-icon"
+                      target="_blank"
+                      title="Chat on WhatsApp"
+                      >WhatsApp</a
+                    >
+                  </p>
                 </li>
 
                 <li class="about-item">
                   <div class="about-item-icon">
-                    <ion-icon name="wine-outline"></ion-icon>
+                    <ion-icon name="logo-amazon"></ion-icon>
                   </div>
 
-                  <p class="about-item-text">Exceptional Lifestyle</p>
+                  <p class="about-item-text">amazon</p>
                 </li>
 
                 <li class="about-item">
                   <div class="about-item-icon">
-                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
                   </div>
 
-                  <p class="about-item-text">Complete 24/7 Security</p>
+                  <p class="about-item-text">instagram</p>
                 </li>
               </ul>
 
               <p class="callout">
-                "Enimad minim veniam quis nostrud exercitation llamco laboris.
-                Lorem ipsum dolor sit amet"
+                "Integrating secure payment gateways and shopping cart systems.
+                Optimizing performance for smooth user experiences across all
+                devices"
               </p>
 
               <a href="#service" class="btn">Our Services</a>
@@ -303,23 +308,25 @@
               <li>
                 <div class="service-card">
                   <div class="card-icon">
+                    <!-- <ion-icon name="cloud-outline"></ion-icon> -->
                     <img
-                      src="./assets/images/service-1.png"
+                      src="data:image/png;base64,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"
                       alt="Service icon"
                     />
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Buy a home</a>
+                    <a href="#">Cloud Deployment</a>
                   </h3>
 
                   <p class="card-text">
-                    over 1 million+ homes for sale available on the website, we
-                    can match you with a house you will want to call home.
+                    Deploying web applications to cloud platforms such as AWS.
+                    Ensuring scalability, reliability, and security for your
+                    applications and efficient data handling.
                   </p>
 
                   <a href="#" class="card-link">
-                    <span>Find A Home</span>
+                    <span>Back</span>
 
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                   </a>
@@ -330,22 +337,23 @@
                 <div class="service-card">
                   <div class="card-icon">
                     <img
-                      src="./assets/images/service-2.png"
+                      src="data:image/png;base64,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"
                       alt="Service icon"
                     />
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Rent a home</a>
+                    <a href="#">E-commerce Solutions</a>
                   </h3>
 
                   <p class="card-text">
-                    over 1 million+ homes for sale available on the website, we
-                    can match you with a house you will want to call home.
+                    Building custom e-commerce platforms using modern
+                    frameworks. Integrating secure payment gateways and shopping
+                    cart systems.
                   </p>
 
                   <a href="#" class="card-link">
-                    <span>Find A Home</span>
+                    <span>Back</span>
 
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                   </a>
@@ -356,22 +364,23 @@
                 <div class="service-card">
                   <div class="card-icon">
                     <img
-                      src="./assets/images/service-3.png"
+                      src="data:image/jpeg;base64,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"
                       alt="Service icon"
                     />
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Sell a home</a>
+                    <a href="#">Backend Development</a>
                   </h3>
 
                   <p class="card-text">
-                    over 1 million+ homes for sale available on the website, we
-                    can match you with a house you will want to call home.
+                    Developing robust server-side applications using Node.js.
+                    Managing databases like MongoDB to ensure secure and
+                    efficient data handling.
                   </p>
 
                   <a href="#" class="card-link">
-                    <span>Find A Home</span>
+                    <span>Back</span>
 
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                   </a>
@@ -397,7 +406,7 @@
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="./assets/images/img2.png"
+                        src="/img/img4.png"
                         alt="New Apartment Nice View"
                         class="w-100"
                       />
@@ -405,7 +414,7 @@
 
                     <!-- <div class="card-badge green">For Rent</div> -->
 
-                    <div class="banner-actions">
+                    <!-- <div class="banner-actions">
                       <button class="banner-actions-btn">
                         <ion-icon name="location"></ion-icon>
 
@@ -423,22 +432,14 @@
 
                         <span>2</span>
                       </button>
-                    </div>
+                    </div> -->
                   </figure>
 
                   <div class="card-content">
-                    <div class="card-price"><strong>$34,900</strong>/Month</div>
-
                     <h3 class="h3 card-title">
-                      <a href="#">New Apartment Nice View</a>
+                      <a href="#">Kitkat Project</a>
                     </h3>
-
-                    <p class="card-text">
-                      Beautiful Huge 1 Family House In Heart Of Westbury. Newly
-                      Renovated With New Wood
-                    </p>
-
-                    <ul class="card-list">
+                    <!-- <ul class="card-list">
                       <li class="card-item">
                         <strong>3</strong>
 
@@ -462,14 +463,14 @@
 
                         <span>Square Ft</span>
                       </li>
-                    </ul>
+                    </ul> -->
                   </div>
 
                   <div class="card-footer">
                     <div class="card-author">
                       <figure class="author-avatar">
                         <img
-                          src="./assets/images/img1.jpeg"
+                          src="/img/img1.jpeg"
                           alt="William Seklo"
                           class="w-100"
                         />
@@ -480,22 +481,22 @@
                           <a href="#">susee</a>
                         </p>
 
-                        <p class="author-title">Estate Agents</p>
+                        <p class="author-title">Software Developer</p>
                       </div>
                     </div>
 
                     <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
+                      <!-- <button class="card-footer-actions-btn">
                         <ion-icon name="resize-outline"></ion-icon>
-                      </button>
+                      </button> -->
 
                       <button class="card-footer-actions-btn">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
-
+                      <!-- 
                       <button class="card-footer-actions-btn">
                         <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -506,7 +507,7 @@
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="./assets/images/img4.png"
+                        src="/img/img5.png"
                         alt="Modern Apartments"
                         class="w-100"
                       />
@@ -514,7 +515,7 @@
 
                     <!-- <div class="card-badge orange">For Sales</div> -->
 
-                    <div class="banner-actions">
+                    <!-- <div class="banner-actions">
                       <button class="banner-actions-btn">
                         <ion-icon name="location"></ion-icon>
 
@@ -532,22 +533,15 @@
 
                         <span>2</span>
                       </button>
-                    </div>
+                    </div> -->
                   </figure>
 
                   <div class="card-content">
-                    <div class="card-price"><strong>$34,900</strong>/Month</div>
-
                     <h3 class="h3 card-title">
-                      <a href="#">Modern Apartments</a>
+                      <a href="#">Dashboard</a>
                     </h3>
 
-                    <p class="card-text">
-                      Beautiful Huge 1 Family House In Heart Of Westbury. Newly
-                      Renovated With New Wood
-                    </p>
-
-                    <ul class="card-list">
+                    <!-- <ul class="card-list">
                       <li class="card-item">
                         <strong>3</strong>
 
@@ -571,14 +565,14 @@
 
                         <span>Square Ft</span>
                       </li>
-                    </ul>
+                    </ul> -->
                   </div>
 
                   <div class="card-footer">
                     <div class="card-author">
                       <figure class="author-avatar">
                         <img
-                          src="./assets/images/img1.jpeg"
+                          src="/img/img1.jpeg"
                           alt="William Seklo"
                           class="w-100"
                         />
@@ -589,22 +583,22 @@
                           <a href="#">William Seklo</a>
                         </p>
 
-                        <p class="author-title">Estate Agents</p>
+                        <p class="author-title">Software Developer</p>
                       </div>
                     </div>
 
                     <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
+                      <!-- <button class="card-footer-actions-btn">
                         <ion-icon name="resize-outline"></ion-icon>
-                      </button>
+                      </button> -->
 
                       <button class="card-footer-actions-btn">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="card-footer-actions-btn">
+                      <!-- <button class="card-footer-actions-btn">
                         <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -615,7 +609,7 @@
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="./assets/images/img5.png"
+                        src="/img/img6.png"
                         alt="Comfortable Apartment"
                         class="w-100"
                       />
@@ -623,7 +617,7 @@
 
                     <!-- <div class="card-badge green">For Rent</div> -->
 
-                    <div class="banner-actions">
+                    <!-- <div class="banner-actions">
                       <button class="banner-actions-btn">
                         <ion-icon name="location"></ion-icon>
 
@@ -641,22 +635,15 @@
 
                         <span>2</span>
                       </button>
-                    </div>
+                    </div> -->
                   </figure>
 
                   <div class="card-content">
-                    <div class="card-price"><strong>$34,900</strong>/Month</div>
-
                     <h3 class="h3 card-title">
-                      <a href="#">Comfortable Apartment</a>
+                      <a href="#">Admin Authentication</a>
                     </h3>
 
-                    <p class="card-text">
-                      Beautiful Huge 1 Family House In Heart Of Westbury. Newly
-                      Renovated With New Wood
-                    </p>
-
-                    <ul class="card-list">
+                    <!-- <ul class="card-list">
                       <li class="card-item">
                         <strong>3</strong>
 
@@ -680,14 +667,14 @@
 
                         <span>Square Ft</span>
                       </li>
-                    </ul>
+                    </ul> -->
                   </div>
 
                   <div class="card-footer">
                     <div class="card-author">
                       <figure class="author-avatar">
                         <img
-                          src="./assets/images/img1.jpeg"
+                          src="/img/img1.jpeg"
                           alt="William Seklo"
                           class="w-100"
                         />
@@ -698,22 +685,22 @@
                           <a href="#">susee</a>
                         </p>
 
-                        <p class="author-title">Estate Agents</p>
+                        <p class="author-title">Software Developer</p>
                       </div>
                     </div>
 
                     <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
+                      <!-- <button class="card-footer-actions-btn">
                         <ion-icon name="resize-outline"></ion-icon>
-                      </button>
+                      </button> -->
 
                       <button class="card-footer-actions-btn">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="card-footer-actions-btn">
+                      <!-- <button class="card-footer-actions-btn">
                         <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -724,15 +711,15 @@
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="./assets/images/property-4.png"
+                        src="/img/img2.png"
                         alt="Luxury villa in Rego Park"
                         class="w-100"
                       />
                     </a>
 
-                    <div class="card-badge green">For Rent</div>
+                    <!-- <div class="card-badge green">For Rent</div> -->
 
-                    <div class="banner-actions">
+                    <!-- <div class="banner-actions">
                       <button class="banner-actions-btn">
                         <ion-icon name="location"></ion-icon>
 
@@ -750,22 +737,15 @@
 
                         <span>2</span>
                       </button>
-                    </div>
+                    </div> -->
                   </figure>
 
                   <div class="card-content">
-                    <div class="card-price"><strong>$34,900</strong>/Month</div>
-
                     <h3 class="h3 card-title">
-                      <a href="#">Luxury villa in Rego Park</a>
+                      <a href="#">Sk Engineering</a>
                     </h3>
 
-                    <p class="card-text">
-                      Beautiful Huge 1 Family House In Heart Of Westbury. Newly
-                      Renovated With New Wood
-                    </p>
-
-                    <ul class="card-list">
+                    <!-- <ul class="card-list">
                       <li class="card-item">
                         <strong>3</strong>
 
@@ -789,14 +769,14 @@
 
                         <span>Square Ft</span>
                       </li>
-                    </ul>
+                    </ul> -->
                   </div>
 
                   <div class="card-footer">
                     <div class="card-author">
                       <figure class="author-avatar">
                         <img
-                          src="./assets/images/author.jpg"
+                          src="/img/img1.jpeg"
                           alt="William Seklo"
                           class="w-100"
                         />
@@ -804,25 +784,25 @@
 
                       <div>
                         <p class="author-name">
-                          <a href="#">William Seklo</a>
+                          <a href="#">susee</a>
                         </p>
 
-                        <p class="author-title">Estate Agents</p>
+                        <p class="author-title">Software Developer</p>
                       </div>
                     </div>
 
                     <div class="card-footer-actions">
-                      <button class="card-footer-actions-btn">
+                      <!-- <button class="card-footer-actions-btn">
                         <ion-icon name="resize-outline"></ion-icon>
-                      </button>
+                      </button> -->
 
                       <button class="card-footer-actions-btn">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="card-footer-actions-btn">
+                      <!-- <button class="card-footer-actions-btn">
                         <ion-icon name="add-circle-outline"></ion-icon>
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -835,7 +815,7 @@
         - #FEATURES
       -->
 
-        <section class="features">
+        <!-- <section class="features">
           <div class="container">
             <p class="section-subtitle">Our Aminities</p>
 
@@ -955,13 +935,13 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
         <!-- 
         - #BLOG
       -->
 
-        <section class="blog" id="blog">
+        <!-- <section class="blog" id="blog">
           <div class="container">
             <p class="section-subtitle">News & Blogs</p>
 
@@ -1120,7 +1100,8 @@
               </li>
             </ul>
           </div>
-        </section>
+        
+        </section> -->
 
         <!-- 
         - #CTA
@@ -1130,15 +1111,16 @@
           <div class="container">
             <div class="cta-card">
               <div class="card-content">
-                <h2 class="h2 card-title">Looking for a dream home?</h2>
+                <h2 class="h2 card-title">Full-Stack Development</h2>
 
                 <p class="card-text">
-                  We can help you realize your dream of a new home
+                  Providing end-to-end solutions that cover both frontend and
+                  backend development.
                 </p>
               </div>
 
               <button class="btn cta-btn">
-                <span>Explore Properties</span>
+                <span>Software Developer</span>
 
                 <ion-icon name="arrow-forward-outline"></ion-icon>
               </button>
@@ -1156,37 +1138,36 @@
       <div class="footer-top">
         <div class="container">
           <div class="footer-brand">
-            <a href="#" class="logo">
-              <img src="./assets/images/logo-light.png" alt="Homeverse logo" />
-            </a>
-
-            <p class="section-text">
-              Lorem Ipsum is simply dummy text of the and typesetting industry.
-              Lorem Ipsum is dummy text of the printing.
-            </p>
+            <!-- <a href="#" class="logo">
+              <img src="/img/hero-banner.png" alt="Homeverse logo" />
+            </a> -->
 
             <ul class="contact-list">
               <li>
                 <a href="#" class="contact-link">
                   <ion-icon name="location-outline"></ion-icon>
 
-                  <address>Brooklyn, New York, United States</address>
+                  <address>Ganapathy , coimbatore</address>
                 </a>
               </li>
 
               <li>
-                <a href="tel:+0123456789" class="contact-link">
+                <a
+                  href="https://wa.me/7397277786"
+                  class="whatsapp-icon contact-link"
+                  title="Chat on WhatsApp"
+                >
                   <ion-icon name="call-outline"></ion-icon>
 
-                  <span>+0123-456789</span>
+                  <span>739-7277-786</span>
                 </a>
               </li>
 
               <li>
-                <a href="mailto:contact@homeverse.com" class="contact-link">
+                <a href="mailto:susee37432@gmail.com" class="contact-link">
                   <ion-icon name="mail-outline"></ion-icon>
 
-                  <span>contact@homeverse.com</span>
+                  <span>susee37432@gmail.com</span>
                 </a>
               </li>
             </ul>
@@ -1237,10 +1218,6 @@
               </li>
 
               <li>
-                <a href="#" class="footer-link">Locations Map</a>
-              </li>
-
-              <li>
                 <a href="#" class="footer-link">FAQ</a>
               </li>
 
@@ -1255,49 +1232,37 @@
               </li>
 
               <li>
-                <a href="#" class="footer-link">Order tracking</a>
+                <a href="#" class="footer-link">E-commerce Solutions </a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Wish List</a>
+                <a href="#" class="footer-link">Cloud Deployment </a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Login</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">My account</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Terms & Conditions</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Promotional Offers</a>
+                <a href="#" class="footer-link">Backend Development</a>
               </li>
             </ul>
 
             <ul class="footer-list">
               <li>
-                <p class="footer-list-title">Customer Care</p>
+                <p class="footer-list-title">Client</p>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Login</a>
+                <a href="#" class="footer-link">Dedicated Support</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">My account</a>
+                <a href="#" class="footer-link">Ongoing Assistance</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Wish List</a>
+                <a href="#" class="footer-link">Personalized Solutions</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Order tracking</a>
+                <a href="#" class="footer-link">Timely Responses</a>
               </li>
 
               <li>
@@ -1305,7 +1270,7 @@
               </li>
 
               <li>
-                <a href="#" class="footer-link">Contact us</a>
+                <a href="#" class="footer-link">Feedback and Improvement</a>
               </li>
             </ul>
           </div>
@@ -1315,7 +1280,7 @@
       <div class="footer-bottom">
         <div class="container">
           <p class="copyright">
-            &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+            &copy; 2024 <a href="#">susee</a>. All Rights Reserved
           </p>
         </div>
       </div>
