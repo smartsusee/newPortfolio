@@ -1774,3 +1774,19 @@ a {
     color: rgb(241, 241, 246);
   }
 }
+
+.btn-item {
+  /* border-radius: 10px !important; */
+  animation-name: btnAnimate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes btnAnimate {
+  10% {
+    transform: translate(100px);
+  }
+  50% {
+    transform: translatey(200px);
+  }
+}
